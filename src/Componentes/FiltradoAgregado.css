@@ -1,0 +1,36 @@
+.filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.filter-container span {
+  font-weight: bold;
+}
+
+.filter-container select,
+.filter-container input {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.add-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #001f5b;
+  margin-right: 5px;
+}
+
+.add-icon {
+  background: none;
+  border: none;
+  color: #23297F;
+  font-size: 1.5em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
