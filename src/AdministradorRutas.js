@@ -69,7 +69,9 @@ const AdministradorRutas = () => {
             onFilterChange={handleFilterChange}
             onAddClick={handleAddClick}
           />
-          <Tabla columns={columns} data={data} />
+          <div className="scroll-container">
+            <Tabla columns={columns} data={data} />
+          </div>
         </div>
       </div>
     </div>

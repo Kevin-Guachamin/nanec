@@ -9,11 +9,11 @@
 
 .contenido-tabla-rutas {
   flex: 1;
-  padding: 20px;
+  padding: 15px;
 }
 
 .scroll-container {
-  max-height: 800px;
+  max-height: 500px; /* Cambia el valor para ajustar la altura */
   overflow-y: auto;
   border: 1px solid #ddd;
 }
@@ -33,6 +33,3 @@
   background-color: #f2f2f2;
   font-weight: bold;
 }
-
-
-
