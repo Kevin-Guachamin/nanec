@@ -51,3 +51,16 @@
 .barra-lateral-item:hover {
   background-color: #ddd;
 }
+
+.barra-lateral-item {
+  padding: 10px;
+  color: #555;
+  text-decoration: none;
+  display: block;
+}
+
+.barra-lateral-item.active {
+  font-weight: bold;
+  background-color: #007bff; /* Color de fondo para el ítem activo */
+  color: white;
+}

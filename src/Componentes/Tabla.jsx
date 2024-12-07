@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 import './Tabla.css';
 
-const Tabla = ({ columns, data }) => {
+const Tabla = ({ columns, data, onEditClick, onDeleteClick }) => {
   return (
     <table className="table">
       <thead className="header">
@@ -25,10 +25,10 @@ const Tabla = ({ columns, data }) => {
               </td>
             ))}
             <td className="table-cell">
-              <button className="action-button edit">
+              <button className="action-button edit" onClick={() => onEditClick(row)}>
                 <FaEdit />
               </button>
-              <button className="action-button delete">
+              <button className="action-button delete" onClick={() => onDeleteClick(row.id)}>
                 <FaTrash />
               </button>
             </td>
@@ -47,6 +47,8 @@ Tabla.propTypes = {
     })
   ).isRequired,
   data: PropTypes.arrayOf(PropTypes.object).isRequired,
+  onEditClick: PropTypes.func.isRequired,
+  onDeleteClick: PropTypes.func.isRequired,
 };
 
 export default Tabla;

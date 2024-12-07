@@ -6,10 +6,10 @@ import './AdministradorBienvenida.css';
 
 function AdministradorBienvenida() {
   const menuItems = [
-    { label: 'Inicio', link: '#inicio' },
-    { label: 'Estudiantes', link: '#estudiantes' },
-    { label: 'Conductores', link: '#conductores' },
-    { label: 'Rutas', link: '#rutas' },
+    { label: 'Inicio', link: '/bienvenida' }, 
+    { label: 'Estudiantes', link: '/estudiantes' },
+    { label: 'Conductores', link: '/conductores' },
+    { label: 'Rutas', link: '/rutas' },
   ];
 
   return (
@@ -19,8 +19,8 @@ function AdministradorBienvenida() {
         <BarraLateral
           userName="Luisa Casas"
           userRole="Administrador"
-          userIcon="https://cdn-icons-png.flaticon.com/128/1077/1077012.png"
-          menuItems={menuItems}
+          userIcon="https://cdn-icons-png.flaticon.com/512/5322/5322033.png"
+          menuItems={menuItems} // Pasa el array actualizado
         />
         <MenuAdministrador />
       </div>

@@ -1,13 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom'; // Importa useLocation
 import './Encabezado.css';
 
 const Encabezado = ({ logoSrc, text }) => {
+  const navigate = useNavigate();
+  
+  const handleBackToWelcome = () => {
+      navigate('/'); // Redirige al login si estás en bienvenida
+     
+  };
+
   return (
     <div className="encabezado-container">
       <img src={logoSrc} alt="Logo de la EPN" className="encabezado-logo" />
       <h2 className="encabezado-text">{text}</h2>
-      <button type="button" className="encabezado-button">
+      <button
+        type="button"
+        className="encabezado-button"
+        onClick={handleBackToWelcome} // Llama a la función de salida
+      >
         <img
           src="https://cdn-icons-png.flaticon.com/128/906/906811.png"
           alt="icono de salida"
